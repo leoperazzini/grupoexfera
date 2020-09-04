@@ -3,7 +3,7 @@ const app = express()
 const consign = require('consign')
 const forceDomain = require('forcedomain')
 
-const port = 3000
+const port = 3003
 
 app.set('view engine', 'ejs')
 app.set('views', './app/views')
