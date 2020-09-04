@@ -3,7 +3,7 @@ const app = express()
 const consign = require('consign')
 const forceDomain = require('forcedomain')
 
-const port = 3003
+const port = 3000
 
 app.set('view engine', 'ejs')
 app.set('views', './app/views')
@@ -19,5 +19,5 @@ consign().include('./app/routes')
 .into(app)
 
 app.listen(port, ()=>{
-
+    console.log('server running on port:' + port)
 })
