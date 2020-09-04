@@ -8,7 +8,7 @@ const port = 3000
 app.set('view engine', 'ejs')
 app.set('views', './app/views')
 
-app.unsubscribe('/', express.static('public'))
+app.use('/', express.static('public'))
 
 app.use(forceDomain({
     hostname:'www.grupoexfera.com.br',
