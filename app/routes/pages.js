@@ -41,6 +41,13 @@ module.exports = (app) =>{
     app.get('/taxidoor', (req, res)=>{
         res.render('pages/taxidoor', {
             header: '../partials/header',
+            navbar:'../partials/navbar',
+            footer:'../partials/footer'
+        })
+    })
+    app.get('/mochila-pirulito', (req, res)=>{
+        res.render('pages/mochila-pirulito', {
+            header: '../partials/header',
             navbar:'../partials/navbar'
         })
     })
