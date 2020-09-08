@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+	
+    
+    <title>Grupo Exfera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="We Science">
+    <meta charset="UTF-8">    
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <link href="css\font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">  
+   
+</head>
+    
 
-<%- include(header)%>
+
+
+
+
 
 <body class="hidden hidden-ball smooth-scroll scale-title">
 
@@ -30,7 +49,40 @@
                 <div id="header-container">
                 
                 
-               <%- include(navbar)%>
+                <!-- Logo -->
+                <div id="logo" class="hide-ball">
+                    <a class="ajax-link" href="index.html">
+                        <img class="black-logo" src="images\logo-ex.png" alt="Grupo Exfera">
+                        <img class="white-logo" src="images\logo-white-ex.png" alt="Grupo Exfera">
+                    </a>
+                </div>
+                <!--/Logo -->
+                            
+                
+                <!-- Navigation -->
+                <nav> 
+                    <div class="nav-height">
+                        <div class="outer">
+                            <div class="inner">           
+                                <ul data-breakpoint="10025" class="flexnav">
+                                    <li class="link menu-timeline"><a class="active" href="#"><span data-hover="Nosso Portfolio">Nosso Portfolio</span></a>
+                                        <ul>
+                                            <li><a class="ajax-link active" href="/midia-ooh">Mídias OOH</a></li>
+                                            <li><a class="ajax-link" href="/marketing-promocional">Marketing Promocional</a></li>
+                                            <li><a class="ajax-link" href="/midias-impressas">Mídias Impressas</a></li>
+                                                                                        
+                                        </ul>
+                                    </li>                           
+                                    <li class="link menu-timeline"><a class="ajax-link" href="/grupo-exfera"><span data-hover="Sobre a Empresa">Sobre a Empresa</span></a></li>
+                                    <li class="link menu-timeline"><a class="ajax-link" href="/midiakit/Grupo-Exfera-Midia-Kit.pdf"><span data-hover="Sobre a Empresa">Midia Kit</span></a></li>                         
+                                    <li class="link menu-timeline"><a class="ajax-link" href="/contato"><span data-hover="Fale Conosco">Fale Conosco</span></a></li>
+                                                   
+                                </ul>            
+                            </div>
+                        </div> 
+                    </div>          
+                </nav>
+                <!--/Navigation -->
                 
                 <!-- Menu Burger -->
                 <div class="button-wrap right  menu">
@@ -105,7 +157,7 @@
                                 
                                 <hr><hr>
                                 
-                                <div class="one_third">
+                                <div class="one_third" style="margin-right: 2%!important;">
                                 
                                 	<div class="has-animation" data-delay="100">
                                     <div class="clapat-icon">
@@ -116,57 +168,31 @@
                                     <p>Email</p>                        
                                 </div>
                                 
-                                <div class="has-animation" data-delay="200">
-                                    <div class="clapat-icon">
-                                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                
+                                </div>
+                                <div class="one_third" style="margin-right: 2%!important;">
+                                    <div class="has-animation" data-delay="200">
+                                        <div class="clapat-icon">
+                                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                        </div>
+                                        <br><br>
+                                        <h6>R. Dalcídio Jurandir, 255. Loja 151. <br>Island Personal Offices. <br>Barra da Tijuca. Rio de Janeiro-RJ.</h6>
+                                        <p>Endereço</p>                        
                                     </div>
-                                	<br><br>
-                                    <h6>R. Dalcídio Jurandir, 255. Loja 151. <br>Island Personal Offices. <br>Barra da Tijuca. Rio de Janeiro-RJ.</h6>
-                                    <p>Endereço</p>                        
                                 </div>
-                                
-                                <div class="has-animation" data-delay="300">
-                                    <div class="clapat-icon">
-                                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+
+                                <div class="one_third" style="margin-right: 2%!important;">
+                                    <div class="has-animation" data-delay="300">
+                                        <div class="clapat-icon">
+                                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                        </div>
+                                        <br><br>
+                                        <h6>(21) 4106-6706</h6>
+                                        <p>Telefone</p>
                                     </div>
-                                	<br><br>
-                                    <h6>(21) 4106-6706</h6>
-                                    <p>Telefone</p>
                                 </div>
                                 
-                                </div>
-                                    
                                 
-                                <div class="two_third last">    
-                                    
-                                    <!-- Contact Formular -->
-                                    <div id="contact-formular">
-                                    
-                                        <div id="message"></div>
-                                    
-                                        <form method="post" action="contact.php" name="contactform" id="contactform">                             
-                                            <div class="name-box has-animation" data-delay="100">        
-                                                <input name="name" type="text" id="name" size="30" value="" placeholder="Seu nome"><label class="input_label"></label>
-                                            </div>                                                        
-                                            <div class="email-box has-animation" data-delay="150">
-                                                <input name="email" type="text" id="email" size="30" value="" placeholder="Email"><label class="input_label"></label>
-                                            </div>                            
-                                            <div class="message-box has-animation" data-delay="100">
-                                                <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Descreva o seu projeto"></textarea><label class="input_label slow"></label>
-                                            </div>                             
-                                            <div class="button-box has-animation" data-delay="100">             
-                                                <div class="clapat-button-wrap parallax-wrap hide-ball">
-                                                    <div class="clapat-button parallax-element">
-                                                        <div class="button-border outline rounded parallax-element-second"><input type="submit" class="send_message" id="submit" value="Enviar"></div>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </form>                        
-                                                                
-                                    </div>
-                                    <!--/Contact Formular -->
-                                
-                                </div>
                                 
                             </div>
                             <!--/Row -->
@@ -185,7 +211,7 @@
                                     	<div class="subtitle-info has-animation">Quer saber mais?</div>
                                         <div class="subtitle-name">Veja os nossos melhores trabalhos</div>                                        
                                         <div class="page-title-wrapper has-animation">
-                                        	<a class="page-title hide-ball next-ajax-link-page" data-type="page-transition" href="portfolio-mixed.html"><span>Veja os nossos <br class="destroy">melhores trabalhos </span></a>
+                                        	<a class="page-title hide-ball next-ajax-link-page" data-type="page-transition" href="/marketing-promocional"><span>Veja os nossos <br class="destroy">melhores trabalhos </span></a>
                                         </div>
                                         
                                     </div>                   
@@ -222,11 +248,9 @@
                             <div class="socials-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
                             <div class="socials-text">Conecte-se</div>
                             <ul class="socials">
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.dribbble.com/clapat" target="_blank">Db</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.twitter.com/clapatdesign" target="_blank">Tw</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.behance.com/clapat" target="_blank">Be</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/clapat.ro" target="_blank">Fb</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/clapat.themes/">In</a></span></li>
+                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.linkedin.com/company/grupoexfera/" target="_blank">In</a></span></li>
+                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/grupoexfera" target="_blank">Fb</a></span></li>
+                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/grupoexfera/">Ig</a></span></li>
                             </ul>                
                         </div>
                         
