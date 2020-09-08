@@ -29,6 +29,7 @@ module.exports = (app) =>{
             navbar:'../partials/navbar',
             footer:'../partials/footer'
     })
+})
     app.get('/grupo-exfera', (req, res)=>{
         res.render('pages/grupo-exfera', {
             header: '../partials/header',
@@ -155,4 +156,4 @@ module.exports = (app) =>{
             footer:'../partials/footer'
         })
     })
-})}
+}
