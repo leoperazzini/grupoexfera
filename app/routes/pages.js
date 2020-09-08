@@ -155,4 +155,4 @@ module.exports = (app) =>{
             footer:'../partials/footer'
         })
     })
-}
+})}
