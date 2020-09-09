@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = (app) =>{
     app.get('/', (req, res)=>{
         res.render('pages/underconstruction')
@@ -155,5 +156,8 @@ module.exports = (app) =>{
             navbar:'../partials/navbar',
             footer:'../partials/footer'
         })
+    })
+    app.get('/midiakit/Grupo-Exfera-Midia-Kit.pdf', (req, res)=>{
+        res.download('./app/files/midiakit.pdf')
     })
 }
