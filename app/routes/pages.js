@@ -1,9 +1,9 @@
 const path = require('path')
 module.exports = (app) =>{
+    // app.get('/', (req, res)=>{
+    //     res.render('pages/underconstruction')
+    // })
     app.get('/', (req, res)=>{
-        res.render('pages/underconstruction')
-    })
-    app.get('/index', (req, res)=>{
         res.render('pages/index', {
             header: '../partials/header',
             navbar:'../partials/navbar',
