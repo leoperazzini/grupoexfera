@@ -7,7 +7,7 @@ const port = 3000
 
 app.set('view engine', 'ejs')
 app.set('views', './app/views')
-
+app.disable('view cache')
 app.use('/', express.static('public'))
 
 app.use(forceDomain({
